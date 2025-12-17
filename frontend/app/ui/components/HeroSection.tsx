@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-
 const HeroSection = () => {
   return (
     <div className="w-full min-h-screen flex items-center justify-center px-4 sm:px-8 md:px-12">
