@@ -1,46 +1,34 @@
-"use client"
 
+"use client";
 import Image from "next/image";
-import React from "react";
+
 const HeroSection = () => {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center px-4 sm:px-8 md:px-12">
-      {/* center container */}
-      <div className="w-full text-center p-12">
-        {/* heading */}
-        <div className="mb-6 p-4">
-          <h1 className=" text-9xl sm:text-4xl md:text-8xl font-bold ">
-            You're Never Truly
-          </h1>
-          <h2 className="text-6xl sm:text-5xl md:text-7xl font-bold text-amber-700">
-            Alone
-          </h2>
+    <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 via-white to-amber-100 py-16 px-4">
+      <div className="max-w-3xl w-full mx-auto flex flex-col items-center text-center shadow-xl rounded-3xl bg-white/80 backdrop-blur-md p-8 border border-amber-100">
+        <div className="w-full overflow-hidden rounded-b-full shadow-lg">
+          <Image
+            src="https://res.cloudinary.com/dc3mdr2ol/image/upload/v1766703602/Whisk_e25580f17eb0e369a044c50b57a2feb4dr_vtnzzz.jpg"
+            width={800}
+            height={400}
+            alt="Hero Image"
+            className="w-full h-auto object-cover rounded-b-full"
+            priority
+          />
         </div>
-
-        {/* description */}
-        <p className="text-sm sm:text-base  font-stretch-50% md:text-lg text-gray-700 max-w-2xl mx-auto">
-          Practice meaningful conversations with AI. Build confidence, improve your communication skills, and find your voice in a supportive, judgment-free environment.
+        <h1 className="mt-10 text-4xl md:text-5xl font-extrabold text-amber-700 drop-shadow-sm leading-tight">
+          Welcome to <span className="text-amber-500">LonelyAI</span>
+        </h1>
+        <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
+          Your AI companion, always here to listen and chat. Start a conversation and experience the future of friendly AI interaction.
         </p>
-
-        {/* button (optional) */}
-        <div className="mt-8">
-          <button className="px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition">
+        <div className="mt-10">
+          <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white text-lg font-semibold rounded-xl shadow-lg hover:scale-105 hover:from-amber-600 hover:to-amber-700 transition-transform duration-200">
             Start Talking Now
           </button>
         </div>
-        {/* video palyer  */}
-        <div className=" mt-5">
-            <Image src="https://res.cloudinary.com/dc3mdr2ol/image/upload/v1766000157/Whisk_741c45d0935943787124e1b96f4fd391dr_pdzhsu.jpg"
-              width={800}
-              height={400}
-            alt="Image"
-            className="w-full rounded-b-full h-fit"
-            />
-
-        </div>
-
       </div>
-    </div>
+    </section>
   );
 };
 
