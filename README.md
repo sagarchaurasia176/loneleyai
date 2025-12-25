@@ -1,4 +1,5 @@
 # 🎙️ Lonely AI Real-Time Conversation Platform
+# Currently Working
 
 ## 📌 Overview
 
